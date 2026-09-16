@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panha Hin — Data Science Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Panha<span> </span>Hin</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Data Science · ITC</p>
+        <h1>Panha Hin</h1>
+        <p class="hero-tagline">I turn raw numbers into decisions worth trusting — through statistics, code, and a healthy curiosity about why things happen.</p>
+        <span class="availability-badge"><span class="availability-dot"></span>Open to internships &amp; entry-level data roles</span>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+
+        <!-- Subtle data-science accents, resting in the open space around the chart -->
+        <div class="viz-datafx">
+          <span class="viz-fx-dot" style="top:10%; left:6%; animation-delay:0s;"></span>
+          <span class="viz-fx-dot" style="top:46%; left:14%; animation-delay:-2.4s;"></span>
+          <span class="viz-fx-dot" style="top:88%; left:60%; animation-delay:-4.8s;"></span>
+          <span class="viz-fx-dot" style="top:66%; left:88%; animation-delay:-1.6s;"></span>
+
+          <span class="viz-fx-symbol" style="top:4%; left:38%; animation-delay:-1s;">Σ</span>
+          <span class="viz-fx-symbol" style="top:80%; left:8%; animation-delay:-3.2s;">μ</span>
+          <span class="viz-fx-symbol" style="top:58%; left:82%; animation-delay:-5s;">σ</span>
+
+          <span class="viz-fx-binary" style="top:92%; left:32%; animation-delay:-2s;">01</span>
+          <span class="viz-fx-binary" style="top:30%; left:4%; animation-delay:-4.4s;">10</span>
+
+          <svg class="viz-fx-scatter" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="5"  cy="34" r="2"/>
+            <circle cx="14" cy="26" r="2"/>
+            <circle cx="21" cy="30" r="2"/>
+            <circle cx="30" cy="18" r="2"/>
+            <circle cx="38" cy="22" r="2"/>
+            <circle cx="46" cy="10" r="2"/>
+            <circle cx="54" cy="14" r="2"/>
+          </svg>
+
+          <svg class="viz-fx-neural" viewBox="0 0 70 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="8" y1="10" x2="35" y2="8"/>
+            <line x1="8" y1="10" x2="35" y2="25"/>
+            <line x1="8" y1="30" x2="35" y2="8"/>
+            <line x1="8" y1="30" x2="35" y2="25"/>
+            <line x1="8" y1="30" x2="35" y2="42"/>
+            <line x1="35" y1="8"  x2="62" y2="18"/>
+            <line x1="35" y1="25" x2="62" y2="18"/>
+            <line x1="35" y1="42" x2="62" y2="18"/>
+            <circle cx="8"  cy="10" r="3"/>
+            <circle cx="8"  cy="30" r="3"/>
+            <circle cx="35" cy="8"  r="3"/>
+            <circle cx="35" cy="25" r="3"/>
+            <circle cx="35" cy="42" r="3"/>
+            <circle cx="62" cy="18" r="3.5"/>
+          </svg>
+
+          <svg class="viz-fx-bars" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2"  y="20" width="6" height="10"/>
+            <rect x="12" y="14" width="6" height="16"/>
+            <rect x="22" y="7"  width="6" height="23"/>
+            <rect x="32" y="1"  width="6" height="29"/>
+          </svg>
+        </div>
+
+        <!-- Main visual: candlestick trading chart, top-right -->
+        <div class="viz-trading-chart">
+          <div class="viz-gridlines">
+            <span></span><span></span><span></span>
+          </div>
+          <svg viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+
+            <g class="viz-trend-overlay">
+              <polyline class="viz-trend-line"
+                points="25,150 57,132.5 89,137.5 121,114 153,92.5 185,102.5 217,80 249,58.5 281,67.5 313,40"
+                fill="none" stroke="var(--olive)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle class="viz-trend-dot" cx="25"  cy="150"  r="4" fill="var(--sage)"/>
+              <circle class="viz-trend-dot" cx="57"  cy="132.5" r="4" fill="var(--olive)"/>
+              <circle class="viz-trend-dot" cx="89"  cy="137.5" r="4" fill="var(--sage)"/>
+              <circle class="viz-trend-dot" cx="121" cy="114"  r="4" fill="var(--olive)"/>
+              <circle class="viz-trend-dot" cx="153" cy="92.5" r="4" fill="var(--sage)"/>
+              <circle class="viz-trend-dot" cx="185" cy="102.5" r="4" fill="var(--olive)"/>
+              <circle class="viz-trend-dot" cx="217" cy="80"   r="4" fill="var(--sage)"/>
+              <circle class="viz-trend-dot" cx="249" cy="58.5" r="4" fill="var(--olive)"/>
+              <circle class="viz-trend-dot" cx="281" cy="67.5" r="4" fill="var(--sage)"/>
+              <circle class="viz-trend-dot viz-live-dot" cx="313" cy="40" r="4.5" fill="var(--olive)"/>
+            </g>
+
+            <g class="candle">
+              <line class="candle-wick" x1="25" y1="130" x2="25" y2="170" stroke="var(--rust)" stroke-width="2"/>
+              <rect class="candle-body" x="17" y="140" width="16" height="20" fill="var(--rust)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="57" y1="110" x2="57" y2="155" stroke="var(--olive)" stroke-width="2"/>
+              <rect class="candle-body" x="49" y="120" width="16" height="25" fill="var(--olive)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="89" y1="115" x2="89" y2="160" stroke="var(--rust)" stroke-width="2"/>
+              <rect class="candle-body" x="81" y="125" width="16" height="25" fill="var(--rust)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="121" y1="90" x2="121" y2="138" stroke="var(--olive)" stroke-width="2"/>
+              <rect class="candle-body" x="113" y="100" width="16" height="28" fill="var(--olive)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="153" y1="70" x2="153" y2="115" stroke="var(--olive)" stroke-width="2"/>
+              <rect class="candle-body" x="145" y="80" width="16" height="25" fill="var(--olive)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="185" y1="80" x2="185" y2="125" stroke="var(--rust)" stroke-width="2"/>
+              <rect class="candle-body" x="177" y="90" width="16" height="25" fill="var(--rust)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="217" y1="55" x2="217" y2="105" stroke="var(--olive)" stroke-width="2"/>
+              <rect class="candle-body" x="209" y="65" width="16" height="30" fill="var(--olive)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="249" y1="35" x2="249" y2="82" stroke="var(--olive)" stroke-width="2"/>
+              <rect class="candle-body" x="241" y="45" width="16" height="27" fill="var(--olive)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="281" y1="45" x2="281" y2="90" stroke="var(--rust)" stroke-width="2"/>
+              <rect class="candle-body" x="273" y="55" width="16" height="25" fill="var(--rust)"/>
+            </g>
+            <g class="candle">
+              <line class="candle-wick" x1="313" y1="15" x2="313" y2="65" stroke="var(--olive)" stroke-width="2"/>
+              <rect class="candle-body" x="305" y="25" width="16" height="30" fill="var(--olive)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner about-grid">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>I'm a third-year Data Science student at the <strong>Institute of Technology of Cambodia (ITC)</strong>. I'm passionate about data analysis, machine learning, and programming — and even more passionate about pointing all three at real problems worth solving.</p>
+        <p>Most of my work sits at the intersection of statistics and software: building the tools that clean and structure data, then the models and visuals that make sense of it. I like problems that start messy and end with a clear answer.</p>
+
+        <h3 class="about-subhead">Career objective</h3>
+        <p>My goal is to grow into a data analyst or data scientist role where I can apply statistics, programming, and machine learning to solve practical business and social problems. In the near term, I'm looking for an internship or entry-level opportunity where I can contribute to real data projects, learn from experienced teams, and keep building toward a career in data-driven decision-making.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-row"><span>Based in</span><strong>Cambodia</strong></div>
+        <div class="about-card-row"><span>Studying</span><strong>Data Science, ITC</strong></div>
+        <div class="about-card-row"><span>Year</span><strong>3rd year</strong></div>
+        <div class="about-card-row"><span>Focus</span><strong>Statistics &amp; ML</strong></div>
+        <div class="about-card-row"><span>Looking for</span><strong>Internship / entry-level</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <ul class="tag-list">
+            <li>C</li><li>C++</li><li>Python</li><li>NumPy</li><li>Pandas</li><li>Matplotlib</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Data Analysis &amp; Visualization</h3>
+          <ul class="tag-list">
+            <li>Excel</li><li>Power BI</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Database</h3>
+          <ul class="tag-list">
+            <li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Mathematics</h3>
+          <ul class="tag-list">
+            <li>Calculus</li><li>Differential Equations</li><li>Probability</li><li>Statistics</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <h3>Rainy Days in a Month</h3>
+          </div>
+          <p>A statistics project that analyzes rainfall data and estimates the probability and expected number of rainy days in a month using the binomial distribution.</p>
+          <ul class="tag-list">
+            <li>Statistics</li><li>Probability</li><li>Data Analysis</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <h3>Student Information Management</h3>
+          </div>
+          <p>A C++ system for managing student records using a queue data structure — supports adding, searching, updating, removing, displaying, sorting, and saving data via CSV files.</p>
+          <ul class="tag-list">
+            <li>C++</li><li>Queue</li><li>CSV</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <div class="section-inner">
+      <h2>Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Current</span>
+            <h3>Institute of Technology of Cambodia</h3>
+            <p class="timeline-sub">Bachelor of Data Science</p>
+            <p>Currently a third-year student studying mathematics, statistics, probability, programming, databases, data structures, and data science.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Previous</span>
+            <h3>High School</h3>
+            <p class="timeline-sub">Cambodian General Education</p>
+            <p>Completed secondary education with a strong interest in mathematics, technology, and computer-related subjects.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Additional Learning</span>
+            <h3>English Language</h3>
+            <p class="timeline-sub">AEP English Program</p>
+            <p>Developing English reading, speaking, listening, and writing skills.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h2>Contact</h2>
+      <p class="contact-note">I'm open to internships and entry-level opportunities in data analysis or data science — feel free to reach out.</p>
+
+      <div class="contact-cards">
+        <a class="contact-card" href="mailto:panhaaahinn@gmail.com">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M3.5 6.5L12 13L20.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-card-text">
+            <strong>Email</strong>
+            <span>panhaaahinn@gmail.com</span>
+          </span>
+        </a>
+
+        <a class="contact-card" href="https://github.com/panhaaahinn-glitch" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.51 2 12.07c0 4.45 2.865 8.22 6.839 9.55.5.094.683-.219.683-.487 0-.24-.009-.876-.014-1.72-2.782.606-3.369-1.348-3.369-1.348-.455-1.161-1.11-1.47-1.11-1.47-.908-.623.069-.61.069-.61 1.004.071 1.532 1.036 1.532 1.036.892 1.532 2.341 1.09 2.91.834.091-.649.35-1.09.636-1.34-2.221-.253-4.556-1.117-4.556-4.968 0-1.098.39-1.995 1.03-2.698-.103-.254-.447-1.276.098-2.66 0 0 .84-.27 2.75 1.03A9.51 9.51 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.909-1.3 2.747-1.03 2.747-1.03.547 1.384.203 2.406.1 2.66.64.703 1.028 1.6 1.028 2.698 0 3.86-2.339 4.712-4.566 4.96.359.31.678.92.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .27.18.585.688.486C19.138 20.286 22 16.517 22 12.07 22 6.51 17.523 2 12 2Z"/>
+            </svg>
+          </span>
+          <span class="contact-card-text">
+            <strong>GitHub</strong>
+            <span>github.com/panhaaahinn-glitch</span>
+          </span>
+        </a>
+
+        <a class="contact-card" href="https://www.linkedin.com/in/panha-hin-76b405398/" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5ZM.24 8.5h4.5V23H.24V8.5ZM8.34 8.5h4.31v1.98h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.98c0-1.66-.03-3.8-2.31-3.8-2.31 0-2.67 1.8-2.67 3.68V23h-4.5V8.5Z"/>
+            </svg>
+          </span>
+          <span class="contact-card-text">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/panha-hin</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <p>&copy; <span id="year"></span> Panha Hin</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>
